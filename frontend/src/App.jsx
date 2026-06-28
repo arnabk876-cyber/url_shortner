@@ -15,8 +15,8 @@ const handleSubmit = async () => {
     return;
   }
   try{
-    const res = await axios.post(`http://localhost:5000/shorten`, 
-      { originalUrl: url 
+    const res = await axios.post(`${API_BASE_URL}/shorten`, 
+      { originalUrl: url
 
       });
     const newShortUrl = res.data.shortUrl;
